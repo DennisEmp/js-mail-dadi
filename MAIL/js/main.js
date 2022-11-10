@@ -6,7 +6,8 @@ let check = prompt("inserisci la tua mail");
 
 const arrMailList = ["yari@gmail.com", "romina@gmail.com", "trevor@gmail.com", "francesco@gmail.com", "gianluca@gmail.com"];
 
-// SE SEI NELLA LISTA
+
+// check se il prompt è presente nella lista
 
 for (let i = 0; i < (arrMailList.length); i++){
     if (check == arrMailList[i]) {
@@ -18,4 +19,3 @@ for (let i = 0; i < (arrMailList.length); i++){
     else if (check !== arrMailList[i]){
         console.log(`Purtoppo non sei nella lista degli invitati.`)
     }
-}
