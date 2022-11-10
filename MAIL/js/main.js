@@ -11,29 +11,17 @@ let emailtrovata = false;
 // check se il prompt è presente nella lista
 
 for (let i = 0; i < arrMailList.length; i++){
-    
+
     if (check === arrMailList[i]) {
        emailtrovata = true;
     }
-    console.log (`${arrMailList[i]} sei nella lista degli invitati!!`);
-
-    // else {
-    //     console.log(`Purtoppo non sei nella lista degli invitati.`);
-    //     };
 };
 
-if(emailtrovata === false) {
+if(emailtrovata === true){
+    console.log (`${check} sei nella lista degli invitati!!`);
+    document.getElementById("title").innerHTML = "Sei nella lista degli invitati";
+
+} else {        
     console.log("non sei stato invitato");
-}
-
-
-
-
-
-
-
-// if (emailtrovata === true){
-// }
-
-// // SE NON SEI NELLA LISTA
-
+    document.getElementById("title").innerHTML = "Non sei nella lista degli invitati";
+};
